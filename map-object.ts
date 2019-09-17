@@ -1,7 +1,23 @@
-// import { Coordinate } from './coordinate.util';
+import { Coordinate } from './coordinate';
 
-// export class MapObject {
-//     public id: string;
-//     public name: string;
-//     public coordinates: Coordinate;
-// }
+export interface MapObject {
+    id: string;
+    name: string;
+    coord: Coordinate;
+    pinned: boolean;
+    update: boolean;
+    type: string;
+    
+    meta: {
+        description?: string;
+        size?: number;
+        subtype?: number;
+        wounded?: number;
+        callsign?: string;
+        tracked?: boolean;
+        timestamp?: number;
+        medics?: number;
+        technitians?: number;
+        scientists?: number;
+    };
+}
