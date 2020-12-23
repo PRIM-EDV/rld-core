@@ -1,5 +1,3 @@
-
-
 export class Coordinate {
     public static _origin = {x: 300, y: 630};
 
